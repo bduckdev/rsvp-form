@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("./rose-pine.css");
+
+:root {
+  --purple: #9c91bc;
+  --pink: #efc3cb;
+  --dark: #6e5460;
+  --tan: #fed7b1;
+  --gold: #ac9320;
+  --muted: #919cbc;
+  background: var(--rp-moon-base);
+}
+p,
+h1,
+h2,
+label {
+  color: var(--tan);
+}
+
+body {
+  margin: 0 auto;
+}
+
+section {
+  background: var(--purple);
+}
