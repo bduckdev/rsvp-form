@@ -2,22 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("./rose-pine.css");
-
+@import url "./rose-pine.css";
 :root {
-  --purple: #9c91bc;
-  --pink: #efc3cb;
-  --dark: #6e5460;
-  --tan: #fed7b1;
-  --gold: #ac9320;
-  --muted: #919cbc;
-  background: var(--rp-moon-base);
+  --rp-moon-base: #232136;
+  --rp-moon-surface: #2a273f;
+  --rp-moon-overlay: #393552;
+  --rp-moon-muted: #6e6a86;
+  --rp-moon-subtle: #908caa;
+  --rp-moon-text: #e0def4;
+  --rp-moon-love: #eb6f92;
+  --rp-moon-gold: #f6c177;
+  --rp-moon-rose: #ea9a97;
+  --rp-moon-pine: #3e8fb0;
+  --rp-moon-foam: #9ccfd8;
+  --rp-moon-iris: #c4a7e7;
+  --rp-moon-highlight-low: #2a283e;
+  --rp-moon-highlight-med: #44415a;
+  --rp-moon-highlight-high: #56526e;
+
+  --rp-dawn-base: #faf4ed;
+  --rp-dawn-surface: #fffaf3;
+  --rp-dawn-overlay: #f2e9e1;
+  --rp-dawn-muted: #9893a5;
+  --rp-dawn-subtle: #797593;
+  --rp-dawn-text: #575279;
+  --rp-dawn-love: #b4637a;
+  --rp-dawn-gold: #ea9d34;
+  --rp-dawn-rose: #d7827e;
+  --rp-dawn-pine: #286983;
+  --rp-dawn-foam: #56949f;
+  --rp-dawn-iris: #907aa9;
+  --rp-dawn-highlight-low: #f4ede8;
+  --rp-dawn-highlight-med: #dfdad9;
+  --rp-dawn-highlight-high: #cecacd;
+  background: var(--rp-dawn-base);
 }
+
 p,
-h1,
-h2,
+a,
 label {
-  color: var(--tan);
+  color: var(--rp-dawn-text);
 }
 
 body {
@@ -25,5 +49,42 @@ body {
 }
 
 section {
-  background: var(--purple);
+  background: var(--rp-dawn-overlay);
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px var(--rp-dawn-highlight-high);
+}
+
+h2 {
+  color: var(--rp-dawn-love);
+  font-weight: 600;
+}
+
+h1 {
+  font-weight: 800;
+  font-style: italic;
+  color: var(--rp-dawn-gold);
+}
+.label {
+  color: var(--rp-dawn-iris);
+  font-size: 18px;
+}
+label {
+  color: var(--rp-dawn-love);
+}
+#submit-button {
+  background-color: var(--rp-dawn-love);
+  color: var(--rp-dawn-surface);
+  border-radius: 60px;
+  border-style: solid;
+  border-color: var(--rp-dawn-love);
+  border-width: 5px;
+  margin-bottom: 5px;
+}
+#submit-button:hover {
+  transition: 0.2s;
+  background-color: var(--rp-dawn-surface);
+  color: var(--rp-dawn-love);
+  border-style: solid;
+  border-color: var(--rp-dawn-love);
+  border-width: 5px;
 }

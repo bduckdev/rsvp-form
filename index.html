@@ -4,35 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
-    <title>Simple Event Form</title>
+    <title>RSVP Form</title>
   </head>
   <body>
-    <header class="mx-auto mt-40 mb-14 w-1/4">
+    <header class="mx-auto mt-20 mb-14 w-1/4">
       <h1 class="pt-10 pb-5 text-4xl text-center">
         Valentines Day Daddy Daughter Dance
       </h1>
       <h2 class="pt-0 pb-5 text-center">Hosted by Coal Creek Coffee</h2>
     </header>
-    <section class="text-center mx-auto mb-14 w-1/3">
-      <h2 class="text-2xl pt-5 pb-5 mx-auto">About</h2>
-      <p class="mx-auto text-2xl mt-0 pt-5 pb-10 w-4/5">
-        “Experience an unforgettable evening at our Valentine's Daddy Daughter
-        Dance hosted by Coal Creek Coffee! Join us for a heartwarming
-        celebration filled with music, laughter, and cherished moments that you
-        and your daughter will treasure forever."
-      </p>
-    </section>
+
     <section class="mx-auto mb-14 max-w-xl">
+      <!--
       <h2 class="text-2xl text-center pt-5">Location</h2>
+      -->
+      <h2 class="text-2xl text-center pt-5">Novembuary 43rd, 3001</h2>
       <p class="text-xl text-center pt-1 pb-1">Theoretical Venue</p>
       <p class="text-l text-center pt-0 pb-5">
-        123, Whatever Ave, Rocky Top, TN, 37769
+        123 Whatever Ave, Rocky Top, TN, 37769
       </p>
     </section>
-    <section class="flex justify-center items-center mt0 mx-auto max-w-xl">
+    <section class="text-center mx-auto mb-14 w-1/3">
+      <!-- <h2 class="text-2xl pt-5 pb-5 mx-auto">About</h2> -->
+      <p class="mx-auto text-2xl mt-0 pt-10 pb-10 w-4/5 italic">
+        Experience an unforgettable evening at our Valentine's Daddy Daughter
+        Dance hosted by Coal Creek Coffee! Join us for a heartwarming
+        celebration filled with music, laughter, and cherished moments that you
+        and your daughter will treasure forever.
+      </p>
+    </section>
+    <section class="flex justify-center items-center mt0 mx-auto w-1/3">
       <form class="pb-5 pt-5" name="event-form" id="form">
         <h2 class="text-2xl text-center pb-3">RSVP</h2>
-        <p class="pt-0 pb-2 text-xl">Guest 1</p>
+        <p class="pt-0 pb-2 text-xl label">Guest 1</p>
         <div class="flex flex-row justify-between">
           <div class="flex flex-col">
             <label class="text-s" for="guest1-first-name">First Name</label>
@@ -55,7 +59,7 @@
             />
           </div>
         </div>
-        <p class="pt-5 pb-2 text-xl">Guest 1</p>
+        <p class="pt-5 pb-2 text-xl label">Guest 2</p>
         <div class="flex flex-row justify-between">
           <div class="flex flex-col">
             <label class="text-s" for="guest2-first-name">First Name</label>
@@ -79,16 +83,16 @@
           </div>
         </div>
         <div>
-          <p class="text-xl pt-5 pb-2">Phone Number</p>
+          <p class="text-xl pt-5 pb-2 label">Phone Number</p>
           <input class="w-full" type="number" />
         </div>
         <div>
-          <p class="text-xl pt-5 pb-2">Email</p>
+          <p class="text-xl pt-5 pb-2 label">Email</p>
           <input class="w-full" type="email" />
         </div>
         <button
           id="submit-button"
-          class="mx-auto mt-10 bg-white w-full"
+          class="pt-3 pb-3 mx-auto mt-10 bg-white w-full"
           type="submit"
         >
           Submit
