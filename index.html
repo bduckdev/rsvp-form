@@ -7,26 +7,26 @@
     <title>RSVP Form</title>
   </head>
   <body>
-    <header class="mx-auto mt-20 mb-14 w-1/4">
-      <h1 class="pt-10 pb-5 text-4xl text-center">
-        Valentines Day Daddy Daughter Dance
+    <header class="mx-auto my-5 lg:my-10 w-full lg:w-1/3">
+      <h1 class="pt-10 pb-5 text-2xl lg:text-4xl text-center">
+        Valentine's Day Daddy Daughter Dance
       </h1>
-      <h2 class="pt-0 pb-5 text-center">Hosted by Coal Creek Coffee</h2>
+      <h2 class="text-sm lg:text-xl pt-0 pb-5 text-center">
+        Hosted by Coal Creek Coffee
+      </h2>
     </header>
 
-    <section class="mx-auto mb-14 max-w-xl">
-      <!--
-      <h2 class="text-2xl text-center pt-5">Location</h2>
-      -->
-      <h2 class="text-2xl text-center pt-5">Novembuary 43rd, 3001</h2>
-      <p class="text-xl text-center pt-1 pb-1">Theoretical Venue</p>
+    <section class="mx-auto mb-5 w-full lg:mb-10 lg:w-1/2">
+      <h2 class="text-xl lg:text-2xl text-center pt-5">February 3rd</h2>
+      <h3 class="text-l lg:text-xl text-center pt-1">5PM-8PM</h3>
+      <p class="text-xl text-center pt-1 pb-1">Rocky Top Community Center</p>
       <p class="text-l text-center pt-0 pb-5">
         123 Whatever Ave, Rocky Top, TN, 37769
       </p>
     </section>
-    <section class="text-center mx-auto mb-14 w-1/3">
+    <section class="text-center mx-auto mb-5 lg:mb-10 w-full lg:w-1/2">
       <!-- <h2 class="text-2xl pt-5 pb-5 mx-auto">About</h2> -->
-      <p class="mx-auto text-2xl mt-0 pt-10 pb-10 w-4/5 italic">
+      <p class="mx-auto text-l lg:text-xl mt-0 py-5 lg:py-10 w-4/5 italic">
         Experience an unforgettable evening at our Valentine's Daddy Daughter
         Dance hosted by Coal Creek Coffee! Join us for a heartwarming
         celebration filled with music, laughter, and cherished moments that you
@@ -35,10 +35,9 @@
     </section>
     <section
       id="form-container"
-      class="flex justify-center items-center mt0 mx-auto w-1/3"
+      class="flex justify-center items-center py-5 lg:py-10 px-2 mx-auto w-full lg:w-1/2"
     >
       <form
-        class="pb-5 pt-5"
         name="event-form"
         method="POST"
         id="form"
@@ -108,21 +107,21 @@
           <p class="text-xl pt-5 pb-2 label">Email</p>
           <input name="data[email]" class="w-full" type="email" required />
         </div>
-        <div class="mt-10 mb-2 gap-2 flex flex-row align-center justify-center">
+        <div class="mt-5 mb-2 gap-2 flex flex-row align-center justify-center">
           <input type="checkbox" name="data[tos]" required />
           <p class="text-xs">Opt in to text and email updates</p>
         </div>
         <button
           id="submit-button"
-          class="pt-3 pb-3 mx-auto mt-10 bg-white w-full"
+          class="pt-3 pb-3 mx-auto mt-5 bg-white w-full"
           type="submit"
         >
           Submit
         </button>
       </form>
     </section>
-    <footer class="text-center pt-5 pb-5">
-      <a href="http://github.com/bduckdev">github.com/bduckdev</a>
+    <footer class="text-center text-sm lg:text-l py-5">
+      <p>Built by: <a href="http://github.com/bduckdev">Brennan Duck</a></p>
     </footer>
   </body>
   <script type="module" src="./index.js"></script>
