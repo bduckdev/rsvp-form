@@ -7,7 +7,8 @@ form.addEventListener("submit", (e) => {
     body: new FormData(document.querySelector("#form")),
   }).then((res) => {
     if (res.ok) {
-      window.location.href = "bduckdev.github.io/rsvp-form/success.html";
+      window.location.href =
+        "https://bduckdev.github.io/rsvp-form/success.html";
     }
   });
 });
