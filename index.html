@@ -33,8 +33,17 @@
         and your daughter will treasure forever.
       </p>
     </section>
-    <section class="flex justify-center items-center mt0 mx-auto w-1/3">
-      <form class="pb-5 pt-5" name="event-form" id="form">
+    <section
+      id="form-container"
+      class="flex justify-center items-center mt0 mx-auto w-1/3"
+    >
+      <form
+        class="pb-5 pt-5"
+        name="event-form"
+        method="POST"
+        id="form"
+        action="https://sheetdb.io/api/v1/jgieigsrlfcj5"
+      >
         <h2 class="text-2xl text-center pb-3">RSVP</h2>
         <p class="pt-0 pb-2 text-xl label">Guest 1</p>
         <div class="flex flex-row justify-between">
@@ -42,9 +51,10 @@
             <label class="text-s" for="guest1-first-name">First Name</label>
             <input
               class="w-5/6"
-              name="guest1-first-name"
+              name="data[guest1-first-name]"
               type="text"
-              id="name"
+              id="guest1-first-name"
+              required
             />
           </div>
           <div>
@@ -53,9 +63,10 @@
             >
             <input
               class="w-full"
-              name="guest1-last-name"
+              name="data[guest1-last-name]"
               type="text"
               id="name"
+              required
             />
           </div>
         </div>
@@ -65,9 +76,10 @@
             <label class="text-s" for="guest2-first-name">First Name</label>
             <input
               class="w-5/6"
-              name="guest2-first-name"
+              name="data[guest2-first-name]"
               type="text"
               id="name"
+              required
             />
           </div>
           <div>
@@ -76,19 +88,29 @@
             >
             <input
               class="w-full"
-              name="guest2-last-name"
+              name="data[guest2-last-name]"
               type="text"
               id="name"
+              required
             />
           </div>
         </div>
         <div>
           <p class="text-xl pt-5 pb-2 label">Phone Number</p>
-          <input class="w-full" type="number" />
+          <input
+            name="data[phone-number]"
+            class="w-full"
+            type="number"
+            placeholder="Optional"
+          />
         </div>
         <div>
           <p class="text-xl pt-5 pb-2 label">Email</p>
-          <input class="w-full" type="email" />
+          <input name="data[email]" class="w-full" type="email" required />
+        </div>
+        <div class="mt-10 mb-2 gap-2 flex flex-row align-center justify-center">
+          <input type="checkbox" name="data[tos]" required />
+          <p class="text-xs">Opt in to text and email updates</p>
         </div>
         <button
           id="submit-button"
@@ -100,10 +122,8 @@
       </form>
     </section>
     <footer class="text-center pt-5 pb-5">
-      <a href="http://github.io/bduckdev" class="text-black"
-        >github.io/bduckdev</a
-      >
+      <a href="http://github.com/bduckdev">github.com/bduckdev</a>
     </footer>
   </body>
-  <script type="module" src="./dist/index.js"></script>
+  <script type="module" src="./index.js"></script>
 </html>

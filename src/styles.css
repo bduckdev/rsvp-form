@@ -71,6 +71,13 @@ h1 {
 label {
   color: var(--rp-dawn-love);
 }
+a {
+  color: var(--rp-dawn-iris);
+}
+a:hover {
+  color: var(--rp-dawn-love);
+  transition: 150ms;
+}
 #submit-button {
   background-color: var(--rp-dawn-love);
   color: var(--rp-dawn-surface);

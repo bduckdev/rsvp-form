@@ -553,6 +553,10 @@ video {
   margin-bottom: 3.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mt-0 {
   margin-top: 0px;
 }
@@ -611,6 +615,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .bg-white {
@@ -677,13 +685,13 @@ video {
   line-height: 1.75rem;
 }
 
-.italic {
-  font-style: italic;
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+.italic {
+  font-style: italic;
 }
 
 :root {
@@ -754,6 +762,15 @@ h1 {
 
 label {
   color: var(--rp-dawn-love);
+}
+
+a {
+  color: var(--rp-dawn-iris);
+}
+
+a:hover {
+  color: var(--rp-dawn-love);
+  transition: 150ms;
 }
 
 #submit-button {
